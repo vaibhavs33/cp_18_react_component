@@ -24,7 +24,7 @@ function App() {
   //setCount updates the count when the button is clicked
   const [count, setCount] = useState(0);
   return (
-    <div>
+    <>
       <div>
         {/* Logos that link to the Vite and React websites */}
         <a href="https://vite.dev" target="_blank">
@@ -45,17 +45,15 @@ function App() {
         count is {count}
        </button>
        
-      <>
        {/* This shows the Greeting component below the button */}
        <Greeting />
-       
-       {/* This message tells the user to click on the logos */}
+      </div>
+      
+      {/* This message tells the user to click on the logos */}
        <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-       </p>
-      </> 
-      </div>
-    </div>
+       </p> 
+    </>
   );
 }
 
